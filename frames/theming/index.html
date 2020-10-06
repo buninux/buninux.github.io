@@ -119,6 +119,14 @@ input {
 .button-0-2-14.disabled, .button-0-2-14:disabled {
   cursor: not-allowed;
 }
+.button-0-2-14:focus, .button-0-2-14:active {
+  outline: none;
+}
+.button-0-2-14.secondary {
+  color: #1A1A1A;
+  border: 2px solid #1A1A1A;
+  transition: border-color 0.5s ease, color 0.5s ease;
+}
 .button-0-2-14 {
   background-color: #2D8EFF;
 }
@@ -140,65 +148,165 @@ input {
 .button-0-2-14.lg {
   font-size: 24px;
 }
-.button-0-2-14.warning.hover, .button-0-2-14.warning:hover {
+.button-0-2-14.lg buttonIcon:first-child {
+  margin-right: 12px;
+}
+.button-0-2-14.lg buttonIcon:last-child {
+  margin-left: 12px;
+}
+.button-0-2-14.lg buttonIcon:first-child:last-child {
+  margin: 0;
+}
+.button-0-2-14.sm buttonIcon:first-child {
+  margin-right: 9px;
+}
+.button-0-2-14.sm buttonIcon:last-child {
+  margin-left: 9px;
+}
+.button-0-2-14.sm buttonIcon:first-child:last-child {
+  margin: 0;
+}
+.button-0-2-14.warning.hover, .button-0-2-14.warning:hover, .button-0-2-14.warning.focus, .button-0-2-14.warning:focus {
   background-color: #ffd96e;
 }
 .button-0-2-14.warning.active, .button-0-2-14.warning:active {
   background-color: #cca331;
 }
-.button-0-2-14.warning.focus, .button-0-2-14.warning:focus {
-  border: 3px solid #ffd96e;
-}
 .button-0-2-14.warning.disabled, .button-0-2-14.warning:disabled {
   background-color: #ffe69e;
 }
-.button-0-2-14.positive.hover, .button-0-2-14.positive:hover {
+.button-0-2-14.positive.hover, .button-0-2-14.positive:hover, .button-0-2-14.positive.focus, .button-0-2-14.positive:focus {
   background-color: #4eda8c;
 }
 .button-0-2-14.positive.active, .button-0-2-14.positive:active {
   background-color: #0fa552;
 }
-.button-0-2-14.positive.focus, .button-0-2-14.positive:focus {
-  border: 3px solid #4eda8c;
-}
 .button-0-2-14.positive.disabled, .button-0-2-14.positive:disabled {
   background-color: #89e7b3;
 }
-.button-0-2-14.negative.hover, .button-0-2-14.negative:hover {
+.button-0-2-14.negative.hover, .button-0-2-14.negative:hover, .button-0-2-14.negative.focus, .button-0-2-14.negative:focus {
   background-color: #ff7777;
 }
 .button-0-2-14.negative.active, .button-0-2-14.negative:active {
   background-color: #cc3a3a;
 }
-.button-0-2-14.negative.focus, .button-0-2-14.negative:focus {
-  border: 3px solid #ff7777;
-}
 .button-0-2-14.negative.disabled, .button-0-2-14.negative:disabled {
   background-color: #ffa4a4;
 }
-.button-0-2-14.primary.hover, .button-0-2-14.primary:hover {
+.button-0-2-14.primary.hover, .button-0-2-14.primary:hover, .button-0-2-14.primary.focus, .button-0-2-14.primary:focus {
   background-color: #62aaff;
 }
 .button-0-2-14.primary.active, .button-0-2-14.primary:active {
   background-color: #2472cc;
 }
-.button-0-2-14.primary.focus, .button-0-2-14.primary:focus {
-  border: 3px solid #62aaff;
-}
 .button-0-2-14.primary.disabled, .button-0-2-14.primary:disabled {
   background-color: #96c7ff;
 }
-.button-0-2-14.hover, .button-0-2-14:hover {
+.button-0-2-14.hover, .button-0-2-14:hover, .button-0-2-14.focus, .button-0-2-14:focus {
   background-color: #62aaff;
 }
 .button-0-2-14.active, .button-0-2-14:active {
   background-color: #2472cc;
 }
-.button-0-2-14.focus, .button-0-2-14:focus {
-  border: 3px solid #62aaff;
-}
 .button-0-2-14.disabled, .button-0-2-14:disabled {
   background-color: #96c7ff;
+}
+.button-0-2-14.secondary.hover, .button-0-2-14.secondary:hover, .button-0-2-14.secondary.focus, .button-0-2-14.secondary:focus {
+  color: #767676;
+  background-color: #FFFFFF;
+}
+.button-0-2-14.secondary.active, .button-0-2-14.secondary:active {
+  color: #151515;
+  background-color: #FFFFFF;
+}
+.button-0-2-14.secondary.disabled, .button-0-2-14.secondary:disabled {
+  color: #8d8d8d;
+  background-color: #FFFFFF;
+}
+.button-0-2-14.secondary.primary {
+  border-color: #2D8EFF;
+  background-color: #FFFFFF;
+}
+.button-0-2-14.secondary.negative {
+  border-color: #FF4949;
+  background-color: #FFFFFF;
+}
+.button-0-2-14.secondary.positive {
+  border-color: #13CE66;
+  background-color: #FFFFFF;
+}
+.button-0-2-14.secondary.warning {
+  border-color: #FFCC3D;
+  background-color: #FFFFFF;
+}
+.button-0-2-14.secondary {
+  border-color: #1A1A1A;
+  background-color: #FFFFFF;
+}
+.button-0-2-14.secondary.hover, .button-0-2-14.secondary:hover {
+  border-color: #535353;
+}
+.button-0-2-14.secondary.active, .button-0-2-14.secondary:active {
+  border-color: #121212;
+}
+.button-0-2-14.secondary.focus, .button-0-2-14.secondary:focus {
+  border-color: #1A1A1A;
+  border-width: 3px;
+}
+.button-0-2-14.secondary.disabled, .button-0-2-14.secondary:disabled {
+  border-color: #8d8d8d;
+}
+.button-0-2-14.secondary.warning.hover, .button-0-2-14.secondary.warning:hover {
+  border-color: #ffd96e;
+}
+.button-0-2-14.secondary.warning.active, .button-0-2-14.secondary.warning:active {
+  border-color: #b38f2b;
+}
+.button-0-2-14.secondary.warning.focus, .button-0-2-14.secondary.warning:focus {
+  border-color: #FFCC3D;
+  border-width: 3px;
+}
+.button-0-2-14.secondary.warning.disabled, .button-0-2-14.secondary.warning:disabled {
+  border-color: #8d8d8d;
+}
+.button-0-2-14.secondary.positive.hover, .button-0-2-14.secondary.positive:hover {
+  border-color: #4eda8c;
+}
+.button-0-2-14.secondary.positive.active, .button-0-2-14.secondary.positive:active {
+  border-color: #0d9047;
+}
+.button-0-2-14.secondary.positive.focus, .button-0-2-14.secondary.positive:focus {
+  border-color: #13CE66;
+  border-width: 3px;
+}
+.button-0-2-14.secondary.positive.disabled, .button-0-2-14.secondary.positive:disabled {
+  border-color: #8d8d8d;
+}
+.button-0-2-14.secondary.negative.hover, .button-0-2-14.secondary.negative:hover {
+  border-color: #ff7777;
+}
+.button-0-2-14.secondary.negative.active, .button-0-2-14.secondary.negative:active {
+  border-color: #b33333;
+}
+.button-0-2-14.secondary.negative.focus, .button-0-2-14.secondary.negative:focus {
+  border-color: #FF4949;
+  border-width: 3px;
+}
+.button-0-2-14.secondary.negative.disabled, .button-0-2-14.secondary.negative:disabled {
+  border-color: #8d8d8d;
+}
+.button-0-2-14.secondary.primary.hover, .button-0-2-14.secondary.primary:hover {
+  border-color: #62aaff;
+}
+.button-0-2-14.secondary.primary.active, .button-0-2-14.secondary.primary:active {
+  border-color: #1f63b3;
+}
+.button-0-2-14.secondary.primary.focus, .button-0-2-14.secondary.primary:focus {
+  border-color: #2D8EFF;
+  border-width: 3px;
+}
+.button-0-2-14.secondary.primary.disabled, .button-0-2-14.secondary.primary:disabled {
+  border-color: #8d8d8d;
 }
 .picker-0-2-16 {
   display: flex;
@@ -315,7 +423,7 @@ h3 {
 }
 .section-0-2-3 hr {
   margin: 16px 0;
-}</style><link as="script" rel="preload" href="/frames/webpack-runtime-7dcb985f791b55ad5455.js"/><link as="script" rel="preload" href="/frames/framework-85aff51d15c28c7fbe5f.js"/><link as="script" rel="preload" href="/frames/app-a9dbbf327f2d02dfe3b6.js"/><link as="script" rel="preload" href="/frames/commons-c0075c95bb16d72aa8bb.js"/><link as="script" rel="preload" href="/frames/1579b8aba66a5baaa1e3171019b8d2eeb89a24f3-c79ab60a30bd8c477fca.js"/><link as="script" rel="preload" href="/frames/component---src-pages-theming-jsx-20e81bf907cad6b65784.js"/><link as="fetch" rel="preload" href="/frames/page-data/theming/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/frames/page-data/sq/d/2097204188.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/frames/page-data/sq/d/63159454.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/frames/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="layout-0-2-4"><header class="header-0-2-6"><span class="title-0-2-8"><span class="logo-0-2-7 frames"></span><span>FRAMES X</span></span><nav class="nav-0-2-9"><ul><li><a class="link-0-2-10" href="/frames/components/">Components</a></li><li><a aria-current="page" class="link-0-2-10 active" href="/frames/theming/">Theming</a></li><li><a class="link-0-2-10" href="/frames/docs/">Docs</a></li><li><a class="link-0-2-10" href="/frames/learn/">Learn</a></li></ul></nav><span class="logo-0-2-7 robowolf"></span></header><div class="content-0-2-5"><div class="sidebar-0-2-11"><div class="search-0-2-12"><span>🔍</span><input type="text" placeholder="Search"/></div></div><main class="main-0-2-13"><section class="callout-0-2-1"><h1>Title</h1><p>Theming control center provides you with all necessary details to customize and make Frames your own design system or prepare it for a new project.</p></section><div class="controls-0-2-2"><a class="button-0-2-14 preview" href="/frames/theming/preview/">Preview</a></div><section class="section-0-2-3"><h2>Colors</h2><hr/><h3>Brand</h3><ul class="colors-0-2-15"><li><div class="picker-0-2-16"><div class="content-0-2-17" aria-hidden="true"><div role="button" class="preview-0-2-18" style="background-color:#1A1A1A"></div><input class="property-0-2-19" value="#1A1A1A"/><span class="property-0-2-19">foreground</span></div><div style="width:225px;background:#fff;-ms-border-radius:2px;-moz-border-radius:2px;-o-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;-ms-box-shadow:0 0 2px rgba(0,0,0,.3), 0 4px 8px rgba(0,0,0,.3);-moz-box-shadow:0 0 2px rgba(0,0,0,.3), 0 4px 8px rgba(0,0,0,.3);-o-box-shadow:0 0 2px rgba(0,0,0,.3), 0 4px 8px rgba(0,0,0,.3);-webkit-box-shadow:0 0 2px rgba(0,0,0,.3), 0 4px 8px rgba(0,0,0,.3);box-shadow:0 0 2px rgba(0,0,0,.3), 0 4px 8px rgba(0,0,0,.3);box-sizing:initial;font-family:Menlo" class="chrome-picker popup-0-2-20"><div style="width:100%;padding-bottom:55%;position:relative;-ms-border-radius:2px 2px 0 0;-moz-border-radius:2px 2px 0 0;-o-border-radius:2px 2px 0 0;-webkit-border-radius:2px 2px 0 0;border-radius:2px 2px 0 0;overflow:hidden"><div style="position:absolute;top:0px;right:0px;bottom:0px;left:0px;background:hsl(0,100%, 50%)"><style>
+}</style><link as="script" rel="preload" href="/frames/webpack-runtime-5ca03063c94fe381f253.js"/><link as="script" rel="preload" href="/frames/framework-85aff51d15c28c7fbe5f.js"/><link as="script" rel="preload" href="/frames/app-a9dbbf327f2d02dfe3b6.js"/><link as="script" rel="preload" href="/frames/commons-c0075c95bb16d72aa8bb.js"/><link as="script" rel="preload" href="/frames/1579b8aba66a5baaa1e3171019b8d2eeb89a24f3-18ebc49c9b8d7fe26b40.js"/><link as="script" rel="preload" href="/frames/component---src-pages-theming-jsx-20e81bf907cad6b65784.js"/><link as="fetch" rel="preload" href="/frames/page-data/theming/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/frames/page-data/sq/d/2097204188.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/frames/page-data/sq/d/63159454.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/frames/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="layout-0-2-4"><header class="header-0-2-6"><span class="title-0-2-8"><span class="logo-0-2-7 frames"></span><span>FRAMES X</span></span><nav class="nav-0-2-9"><ul><li><a class="link-0-2-10" href="/frames/components/">Components</a></li><li><a aria-current="page" class="link-0-2-10 active" href="/frames/theming/">Theming</a></li><li><a class="link-0-2-10" href="/frames/docs/">Docs</a></li><li><a class="link-0-2-10" href="/frames/learn/">Learn</a></li></ul></nav><span class="logo-0-2-7 robowolf"></span></header><div class="content-0-2-5"><div class="sidebar-0-2-11"><div class="search-0-2-12"><span>🔍</span><input type="text" placeholder="Search"/></div></div><main class="main-0-2-13"><section class="callout-0-2-1"><h1>Title</h1><p>Theming control center provides you with all necessary details to customize and make Frames your own design system or prepare it for a new project.</p></section><div class="controls-0-2-2"><a class="button-0-2-14 preview" href="/frames/theming/preview/">Preview</a></div><section class="section-0-2-3"><h2>Colors</h2><hr/><h3>Brand</h3><ul class="colors-0-2-15"><li><div class="picker-0-2-16"><div class="content-0-2-17" aria-hidden="true"><div role="button" class="preview-0-2-18" style="background-color:#1A1A1A"></div><input class="property-0-2-19" value="#1A1A1A"/><span class="property-0-2-19">foreground</span></div><div style="width:225px;background:#fff;-ms-border-radius:2px;-moz-border-radius:2px;-o-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;-ms-box-shadow:0 0 2px rgba(0,0,0,.3), 0 4px 8px rgba(0,0,0,.3);-moz-box-shadow:0 0 2px rgba(0,0,0,.3), 0 4px 8px rgba(0,0,0,.3);-o-box-shadow:0 0 2px rgba(0,0,0,.3), 0 4px 8px rgba(0,0,0,.3);-webkit-box-shadow:0 0 2px rgba(0,0,0,.3), 0 4px 8px rgba(0,0,0,.3);box-shadow:0 0 2px rgba(0,0,0,.3), 0 4px 8px rgba(0,0,0,.3);box-sizing:initial;font-family:Menlo" class="chrome-picker popup-0-2-20"><div style="width:100%;padding-bottom:55%;position:relative;-ms-border-radius:2px 2px 0 0;-moz-border-radius:2px 2px 0 0;-o-border-radius:2px 2px 0 0;-webkit-border-radius:2px 2px 0 0;border-radius:2px 2px 0 0;overflow:hidden"><div style="position:absolute;top:0px;right:0px;bottom:0px;left:0px;background:hsl(0,100%, 50%)"><style>
           .saturation-white {
             background: -webkit-linear-gradient(to right, #fff, rgba(255,255,255,0));
             background: linear-gradient(to right, #fff, rgba(255,255,255,0));
@@ -723,4 +831,4 @@ h3 {
                 #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%);
             }
           </style><div style="position:absolute;left:64.91228070175438%"><div style="width:12px;height:12px;-ms-border-radius:6px;-moz-border-radius:6px;-o-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;-ms-transform:translate(-6px, -1px);-moz-transform:translate(-6px, -1px);-o-transform:translate(-6px, -1px);-webkit-transform:translate(-6px, -1px);transform:translate(-6px, -1px);background-color:rgb(248, 248, 248);-ms-box-shadow:0 1px 4px 0 rgba(0, 0, 0, 0.37);-moz-box-shadow:0 1px 4px 0 rgba(0, 0, 0, 0.37);-o-box-shadow:0 1px 4px 0 rgba(0, 0, 0, 0.37);-webkit-box-shadow:0 1px 4px 0 rgba(0, 0, 0, 0.37);box-shadow:0 1px 4px 0 rgba(0, 0, 0, 0.37)"></div></div></div></div></div><div style="height:10px;position:relative;display:none"><div style="position:absolute;top:0px;right:0px;bottom:0px;left:0px"><div style="position:absolute;top:0px;right:0px;bottom:0px;left:0px;overflow:hidden"><div style="position:absolute;top:0px;right:0px;bottom:0px;left:0px;background:url(null) center left"></div></div><div style="position:absolute;top:0px;right:0px;bottom:0px;left:0px;background:linear-gradient(to right, rgba(16,18,35, 0) 0%,
-           rgba(16,18,35, 1) 100%)"></div><div style="position:relative;height:100%;margin:0 3px"><div style="position:absolute;left:100%"><div style="width:12px;height:12px;-ms-border-radius:6px;-moz-border-radius:6px;-o-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;-ms-transform:translate(-6px, -1px);-moz-transform:translate(-6px, -1px);-o-transform:translate(-6px, -1px);-webkit-transform:translate(-6px, -1px);transform:translate(-6px, -1px);background-color:rgb(248, 248, 248);-ms-box-shadow:0 1px 4px 0 rgba(0, 0, 0, 0.37);-moz-box-shadow:0 1px 4px 0 rgba(0, 0, 0, 0.37);-o-box-shadow:0 1px 4px 0 rgba(0, 0, 0, 0.37);-webkit-box-shadow:0 1px 4px 0 rgba(0, 0, 0, 0.37);box-shadow:0 1px 4px 0 rgba(0, 0, 0, 0.37)"></div></div></div></div></div></div></div><div style="padding-top:16px;display:flex" class="flexbox-fix"><div style="-webkit-box-flex:1;-moz-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;display:flex;margin-left:-6px" class="flexbox-fix"><div style="padding-left:6px;width:100%"><div style="position:relative"><input style="font-size:11px;color:#333;width:100%;-ms-border-radius:2px;-moz-border-radius:2px;-o-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;border:none;-ms-box-shadow:inset 0 0 0 1px #dadada;-moz-box-shadow:inset 0 0 0 1px #dadada;-o-box-shadow:inset 0 0 0 1px #dadada;-webkit-box-shadow:inset 0 0 0 1px #dadada;box-shadow:inset 0 0 0 1px #dadada;height:21px;text-align:center" value="#101223" spellcheck="false"/><span style="text-transform:uppercase;font-size:11px;line-height:11px;color:#969696;text-align:center;display:block;margin-top:12px">hex</span></div></div></div><div style="width:32px;text-align:right;position:relative"><div style="margin-right:-4px;margin-top:12px;cursor:pointer;position:relative"><svg viewBox="0 0 24 24" style="fill:#333;width:24px;height:24px;border:1px transparent solid;-ms-border-radius:5px;-moz-border-radius:5px;-o-border-radius:5px;-webkit-border-radius:5px;border-radius:5px"><path d="M12,18.17L8.83,15L7.42,16.41L12,21L16.59,16.41L15.17,15M12,5.83L15.17,9L16.58,7.59L12,3L7.41,7.59L8.83,9L12,5.83Z"></path></svg></div></div></div></div></div><div role="button" class="overlay-0-2-21"></div></div></li></ul></section></main></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/theming/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-0b022b024de00896c0c7.js"],"app":["/app-a9dbbf327f2d02dfe3b6.js"],"component---src-components-coming-soon-jsx":["/component---src-components-coming-soon-jsx-f27b3157be0c01abb6b1.js"],"component---src-pages-404-jsx":["/component---src-pages-404-jsx-f480d1df7403f2d1e03d.js"],"component---src-pages-index-jsx":["/component---src-pages-index-jsx-dc4ab92b81b70e276868.js"],"component---src-pages-page-2-jsx":["/component---src-pages-page-2-jsx-7857a1753e54959c2d4a.js"],"component---src-pages-theming-jsx":["/component---src-pages-theming-jsx-20e81bf907cad6b65784.js"],"component---src-pages-theming-preview-jsx":["/component---src-pages-theming-preview-jsx-52cbbbdfe53aaf6e3334.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-d75563a23b2c6c1bda30.js"]};/*]]>*/</script><script src="/frames/polyfill-0b022b024de00896c0c7.js" nomodule=""></script><script src="/frames/component---src-pages-theming-jsx-20e81bf907cad6b65784.js" async=""></script><script src="/frames/1579b8aba66a5baaa1e3171019b8d2eeb89a24f3-c79ab60a30bd8c477fca.js" async=""></script><script src="/frames/commons-c0075c95bb16d72aa8bb.js" async=""></script><script src="/frames/app-a9dbbf327f2d02dfe3b6.js" async=""></script><script src="/frames/framework-85aff51d15c28c7fbe5f.js" async=""></script><script src="/frames/webpack-runtime-7dcb985f791b55ad5455.js" async=""></script></body></html>
+           rgba(16,18,35, 1) 100%)"></div><div style="position:relative;height:100%;margin:0 3px"><div style="position:absolute;left:100%"><div style="width:12px;height:12px;-ms-border-radius:6px;-moz-border-radius:6px;-o-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;-ms-transform:translate(-6px, -1px);-moz-transform:translate(-6px, -1px);-o-transform:translate(-6px, -1px);-webkit-transform:translate(-6px, -1px);transform:translate(-6px, -1px);background-color:rgb(248, 248, 248);-ms-box-shadow:0 1px 4px 0 rgba(0, 0, 0, 0.37);-moz-box-shadow:0 1px 4px 0 rgba(0, 0, 0, 0.37);-o-box-shadow:0 1px 4px 0 rgba(0, 0, 0, 0.37);-webkit-box-shadow:0 1px 4px 0 rgba(0, 0, 0, 0.37);box-shadow:0 1px 4px 0 rgba(0, 0, 0, 0.37)"></div></div></div></div></div></div></div><div style="padding-top:16px;display:flex" class="flexbox-fix"><div style="-webkit-box-flex:1;-moz-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;display:flex;margin-left:-6px" class="flexbox-fix"><div style="padding-left:6px;width:100%"><div style="position:relative"><input style="font-size:11px;color:#333;width:100%;-ms-border-radius:2px;-moz-border-radius:2px;-o-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;border:none;-ms-box-shadow:inset 0 0 0 1px #dadada;-moz-box-shadow:inset 0 0 0 1px #dadada;-o-box-shadow:inset 0 0 0 1px #dadada;-webkit-box-shadow:inset 0 0 0 1px #dadada;box-shadow:inset 0 0 0 1px #dadada;height:21px;text-align:center" value="#101223" spellcheck="false"/><span style="text-transform:uppercase;font-size:11px;line-height:11px;color:#969696;text-align:center;display:block;margin-top:12px">hex</span></div></div></div><div style="width:32px;text-align:right;position:relative"><div style="margin-right:-4px;margin-top:12px;cursor:pointer;position:relative"><svg viewBox="0 0 24 24" style="fill:#333;width:24px;height:24px;border:1px transparent solid;-ms-border-radius:5px;-moz-border-radius:5px;-o-border-radius:5px;-webkit-border-radius:5px;border-radius:5px"><path d="M12,18.17L8.83,15L7.42,16.41L12,21L16.59,16.41L15.17,15M12,5.83L15.17,9L16.58,7.59L12,3L7.41,7.59L8.83,9L12,5.83Z"></path></svg></div></div></div></div></div><div role="button" class="overlay-0-2-21"></div></div></li></ul></section></main></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/theming/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-0b022b024de00896c0c7.js"],"app":["/app-a9dbbf327f2d02dfe3b6.js"],"component---src-components-coming-soon-jsx":["/component---src-components-coming-soon-jsx-f27b3157be0c01abb6b1.js"],"component---src-pages-404-jsx":["/component---src-pages-404-jsx-f480d1df7403f2d1e03d.js"],"component---src-pages-index-jsx":["/component---src-pages-index-jsx-dc4ab92b81b70e276868.js"],"component---src-pages-page-2-jsx":["/component---src-pages-page-2-jsx-7857a1753e54959c2d4a.js"],"component---src-pages-theming-jsx":["/component---src-pages-theming-jsx-20e81bf907cad6b65784.js"],"component---src-pages-theming-preview-jsx":["/component---src-pages-theming-preview-jsx-405ee5126c3b76541f64.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-d75563a23b2c6c1bda30.js"]};/*]]>*/</script><script src="/frames/polyfill-0b022b024de00896c0c7.js" nomodule=""></script><script src="/frames/component---src-pages-theming-jsx-20e81bf907cad6b65784.js" async=""></script><script src="/frames/1579b8aba66a5baaa1e3171019b8d2eeb89a24f3-18ebc49c9b8d7fe26b40.js" async=""></script><script src="/frames/commons-c0075c95bb16d72aa8bb.js" async=""></script><script src="/frames/app-a9dbbf327f2d02dfe3b6.js" async=""></script><script src="/frames/framework-85aff51d15c28c7fbe5f.js" async=""></script><script src="/frames/webpack-runtime-5ca03063c94fe381f253.js" async=""></script></body></html>
